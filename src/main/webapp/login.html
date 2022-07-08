@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.bg-img{
+	background:url('images/facebook.png');
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+}
+.bg-img:after{
+	position:absolute;
+	content:'';
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:rgba(0,0,0,0.7);
+}
+.content{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:999;
+	width:500px;
+	text-align:center;
+	padding:60px 32px;
+	background:rgba(255,255,255,0.04);
+	box-shadow:-1px 4px 28px 0px rgba(0,0,0,0.5);
+}
+.content header{
+	color:white;
+	font-size:33px;
+	font-weight:600;
+	margin:0 0 35px 0;
+	font-family:sans-serif;
+}
+.field{
+	position:relative;
+	height:45px;
+	width:100%;
+	display:flex;
+	background:rgba(255,255,255,0.94);
+}
+.field span{
+width:40px;
+line-height:45px;
+color:#222;
+}
+.field input{
+	height:100%;
+	width:100%;
+	background:transparent;
+	border:none;
+	content:none;
+	font-size:16px;
+	font-family:sans-serif;
+}
+.space{
+	margin-top:20px;
+}
+.pass{
+text-align:center;
+margin:10px 0;
+}
+.pass a{
+text-decoration:none;
+color:white;
+font-family:sans-serif;
+}
+.pass:hover a{
+text-decoration:underline;
+}
+input[type="submit"]{
+	background:#3498db;
+	color:white;
+	border:1px solid #2691d9;
+	font-size:18px;
+	font-weight:600;
+	cursor:grab;
+	font-family:sans-serif;
+}
+input[type="submit"]:hover{
+	background:#2691d9;
+}
+</style>
+</head>
+<body>
+	<div class="bg-img">
+		<div class="content">
+			<header>LOG IN</header>
+				<form action="loginurl" method="GET">
+					<div class="field">
+						<span class="fa fa-user">Username:</span>
+						<input type="text" name="username" placeholder="Email Or Phone">
+					</div>
+					<div class="field space">
+						<span class="fa fa-lock">Password:</span>
+						<input type="password" name="password">
+					</div>
+					<div class="pass">
+						<a href='reset.html'>Forgotten Password?</a>
+					</div>
+					<div class="field space">
+						<input type="submit" value="SUBMIT">
+					</div>
+				</form>
+		</div>
+	</div>
+</body>
+</html>

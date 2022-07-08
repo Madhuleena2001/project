@@ -1,0 +1,79 @@
+@charset "ISO-8859-1";
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.bg-img{
+	background:url('images/sign_up.jpg');
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+}
+.bg-img:after{
+	position:absolute;
+	content:'';
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:rgba(0,0,0,0.7);
+}
+.content{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:999;
+	width:500px;
+	text-align:center;
+	padding:60px 32px;
+	background:rgba(255,255,255,0.04);
+	box-shadow:-1px 4px 28px 0px rgba(0,0,0,0.5);
+}
+.content header{
+	color:white;
+	font-size:33px;
+	font-weight:600;
+	margin:0 0 35px 0;
+	font-family:sans-serif;
+}
+.field{
+	position:relative;
+	height:45px;
+	width:100%;
+	display:flex;
+	background:rgba(255,255,255,0.94);
+}
+.field span{
+	width:200px;
+	text-align:left;
+	font-size:20px;
+	font-weight:200;
+	font-family:sans-serif;
+	margin-top:8px;
+}
+.field input{
+	height:100%;
+	width:100%;
+	background:transparent;
+	border:none;
+	content:none;
+	font-size:16px;
+	font-family:sans-serif;
+}
+.space{
+	margin-top:20px;
+}
+input[type="submit"]{
+	background:#3498db;
+	color:white;
+	border:1px solid #2691d9;
+	font-size:18px;
+	font-weight:600;
+	cursor:grab;
+	font-family:sans-serif;
+}
+input[type="submit"]:hover{
+	background:#2691d9;
+}
